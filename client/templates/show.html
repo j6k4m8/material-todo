@@ -1,0 +1,10 @@
+<template name="show_task">
+    <li id="{{_id}}" data-complete="{{is_complete_yn}}">
+        <div class="collapsible-header">
+            <i class="material-icons complete-icon">{{complete_icon_name}}</i>
+            <span class="title">{{{display_text}}}</span>
+            <span class="right">{{display_date}}</span>
+        </div>
+        <div class="collapsible-body"><p class="details" contenteditable>{{details}}</p></div>
+    </li>
+</template>

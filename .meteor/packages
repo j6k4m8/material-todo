@@ -12,3 +12,4 @@ jquery
 underscore
 iron:router
 materialize:materialize
+momentjs:moment

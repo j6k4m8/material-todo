@@ -1,0 +1,27 @@
+<template name="add_new_task">
+    <div class="row">
+        <div class="input-field col s12">
+            <input type="text" class="validate" id="new-task-text">
+            <label for="new-task-text">New Task</label>
+        </div>
+    </div>
+
+    <ul class="collection">
+        {{#each suggestions}}
+            {{> show_suggestion}}
+        {{/each}}
+    </ul>
+</template>
+
+<template name="show_suggestion">
+    <li class="collection-item">{{text}}</li>
+</template>
+
+<template name="list">
+    <ul class="collapsible todo-list" data-collapsible="accordion">
+        {{#each tasks}}
+            {{> show_task}}
+        {{/each}}
+    </ul>
+</template>
+

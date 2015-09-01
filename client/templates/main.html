@@ -1,5 +1,6 @@
 <template name="main">
     {{> nav}}
+
     {{> yield}}
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -7,9 +8,9 @@
 
 <template name="nav">
     <div class="navbar-fixed">
-        <nav>
+        <nav class="grey darken-4 white-text">
             <div class="nav-wrapper">
-                <a href="#!" class="brand-logo">Logo</a>
+                <a href="#!" class="brand-logo">todo</a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     {{> nav_links}}
@@ -17,7 +18,7 @@
                 <ul class="side-nav" id="mobile-demo">
                     {{> nav_links}}
                 </ul>
-            </div>a
+            </div>
         </nav>
     </div>
 </template>

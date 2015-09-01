@@ -1,3 +1,13 @@
 <template name="home">
-    Home
+    <div class="container">
+        {{> add_new_task}}
+        {{> list}}
+    </div>
+    {{> commandbar}}
+</template>
+
+<template name="commandbar">
+    <div class="flat-bottom">
+        <input id="commandbar" type="text" placeholder="command">
+    </div>
 </template>
